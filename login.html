@@ -1,0 +1,59 @@
+<html>
+<head>
+  <title>spy school club</title>
+</head>
+<body bgcolor = "black" text=red>
+<h5>welcome to spy school </h5>
+<h5>please enter password </h5>
+
+<form name="myForm" action="javascript:void(0);" onsubmit="checkPassword()">
+  <pre>username<input type="text" name="username"></pre>
+  <pre>password<input type="password" name="password"></pre>
+  <input type="submit" value="enter">
+</form>
+<script>
+var loganUsername = "snake466";
+var loganPassword = "wtlhlp";
+
+var noahUsername = "turbo9000";
+var noahPassword = "spy man";
+
+var willUsername = "agentwill";
+var willPassword = "com";
+
+var leviUsername = "agentlevi";
+var leviPassword = "lili";
+
+
+function checkPassword() {
+  var usernameToCheck = document.forms["myForm"]["username"].value;
+  var passwordToCheck = document.forms["myForm"]["password"].value;
+
+  if (usernameToCheck == loganUsername && passwordToCheck == loganPassword) {
+    alert("correct password correct welcome to spy school club");
+    window.location.replace("profilesnake466.html");
+  }
+
+  else if (usernameToCheck == noahUsername && passwordToCheck == noahPassword) {
+    alert("correct password correct welcome to spy school club");
+    window.location.replace("profileturbo9000.html");
+  }
+
+  else if (usernameToCheck == willUsername && passwordToCheck == willPassword) {
+    alert("correct password correct welcome to spy school club");
+    window.location.replace("profileagentwill.html");
+  }
+
+    else if (usernameToCheck == leviUsername && passwordToCheck == leviPassword) {
+    alert("correct password correct welcome to spy school club");
+    window.location.replace("profileagentlevi.html");
+  }
+
+  else {
+    alert(" wrong!!!!!!!!! Intruder alert Intruder alert Intruder alert Intruder alert Intruder alert ");
+  }
+  return false;
+}
+</script>
+</body>
+</html>
