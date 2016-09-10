@@ -1,56 +1,38 @@
 <html>
 <head>
-  <title>spy school club</title>
+  <title>spice club</title>
 </head>
-<body bgcolor = "black" text=red>
-<h5>welcome to spy school </h5>
+<body bgcolor = "green" text=yellow>
+<h8>welcome to spice club<h8>
 <h5>please enter password </h5>
 
 <form name="myForm" action="javascript:void(0);" onsubmit="checkPassword()">
+  <pre>username<input type="text" name="username"></pre>
   <pre>password<input type="password" name="password"></pre>
   <input type="submit" value="enter">
 </form>
 <script>
+var loganUsername = "logan";
+var loganPassword = "spice";
 
-var loganPassword = "wtlhlp";
-
-
-var noahPassword = "spy man";
-
-
-var willPassword = "com";
-
-var leviUsername = " levi  "
-var leviPassword = "lili";
-
+var masonUsername = "mason";
+var masonpassword = "spice";
 
 function checkPassword() {
-
+  var usernameToCheck = document.forms["myForm"]["username"].value;
   var passwordToCheck = document.forms["myForm"]["password"].value;
 
-
+  if (usernameToCheck == loganUsername && passwordToCheck == loganPassword) {
     alert("correct password correct welcome to spy school club");
-    window.location.replace("MEOW.html");
+    window.location.replace("profilelogan.html");
   }
-
-  else if (usernameToCheck == noahUsername && passwordToCheck == noahPassword) {
-    alert("correct password correct welcome to spy school club");
-    window.location.replace ("MEOW.html");
-   }
-
-
-  else if (usernameToCheck == willUsername && passwordToCheck == willPassword) {
-    alert("correct password correct welcome to spy school club");
-    window.location.replace("MEOW.html");
-  }
-
-    else if (usernameToCheck == leviUsername && passwordToCheck == leviPassword) {
-    alert("correct password correct welcome to spy school club");
-    window.location.replace(index.html);
+  else if (usernameToCheck == masonUsername && passwordToCheck == mosonPassword) {
+    alert("correct password your so spicey ");
+    window.location.replace("profilemason.html");
   }
 
   else {
-    alert(" wrong!!!!!!!!! Intruder alert Intruder alert Intruder alert Intruder alert Intruder alert ");
+    alert(" wrong!!!!!!!!! your not spicey ");
   }
   return false;
 }
