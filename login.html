@@ -18,6 +18,9 @@ var loganPassword = "spice";
 var masonUsername = "mason";
 var masonpassword = "spice";
 
+var leviUsername = "p";
+var levipassword = "p";
+
 function checkPassword() {
   var usernameToCheck = document.forms["myForm"]["username"].value;
   var passwordToCheck = document.forms["myForm"]["password"].value;
@@ -30,6 +33,12 @@ function checkPassword() {
     alert("correct password your so spicey ");
     window.location.replace("profileturbo9000.html");
   }
+
+  }
+    else if (usernameToCheck == masonUsername && passwordToCheck == mosonPassword) {
+      alert("correct password your so spicey ");
+      window.location.replace("profilelevi.html");
+    }
 
   else {
     alert(" wrong!!!!!!!!! your not spicey ");
